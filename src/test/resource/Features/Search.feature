@@ -142,7 +142,7 @@ Examples:
 
 
 
-  @Test
+  @Test1
   Scenario: Save the claim with tracking
 
   Given User is already on login page
@@ -173,7 +173,7 @@ Examples:
   Then user click on search
   Then user validate the saved claim number with search results
   
-   @Test
+   @Test2
   Scenario: Submit the claim with tracking
 
   Given User is already on login page

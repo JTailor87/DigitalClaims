@@ -13,7 +13,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"timeline:target/Reports/test-output-thread/"},
 		//dryRun = true, /* Run only when need to check all the step defination steps are created */
-		tags = "@Test"
+		tags = "@Test1"
 				)
 
 public class ParallelRun extends AbstractTestNGCucumberTests {
