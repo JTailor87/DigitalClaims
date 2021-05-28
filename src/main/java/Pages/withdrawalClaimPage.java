@@ -104,7 +104,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterCellNoUnderMembershipDetails(int cellNum) {
-		if (driver.findElement(CellNo).getText().isBlank() == true) {
+		if (driver.findElement(CellNo).getText().isEmpty() == true) {
 			driver.findElement(CellNo).sendKeys(StringUtils.leftPad(Integer.toString(cellNum), 10, '0'));
 		} else {
 			System.out.println("Leave Cell Number as it is");
@@ -118,7 +118,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterPhoneNoUnderMembershipDetails(int phoneNum) {
-		if (driver.findElement(PhoneNo).getText().isBlank() == true) {
+		if (driver.findElement(PhoneNo).getText().isEmpty() == true) {
 			driver.findElement(PhoneNo).sendKeys(StringUtils.leftPad(Integer.toString(phoneNum), 10, '0'));
 		} else {
 			System.out.println("Leave Phone Number as it is");
@@ -132,7 +132,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterEmailAddressUnderMembershipDetails(String emailAdd) {
-		if (driver.findElement(EmailAddress).getText().isBlank() == true) {
+		if (driver.findElement(EmailAddress).getText().isEmpty() == true) {
 			driver.findElement(EmailAddress).sendKeys(emailAdd);
 		} else {
 			System.out.println("Leave Email Address as it is");
@@ -149,7 +149,7 @@ public class withdrawalClaimPage {
 		util.HardWait(1000);
 		driver.findElement(TaxReferenceNumber).click();
 		util.HardWait(1000);
-		if (driver.findElement(TaxReferenceNumber).getText().isBlank() == true) {
+		if (driver.findElement(TaxReferenceNumber).getText().isEmpty() == true) {
 			util.HardWait(1000);
 			System.out.println("Tax Reference Number: "+driver.findElement(TaxReferenceNumber).getText());
 			driver.findElement(TaxReferenceNumber).clear();
@@ -161,7 +161,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterUnitNumber(int unitNo) {
-		if (driver.findElement(UnitNo).getText().isBlank() == true) {
+		if (driver.findElement(UnitNo).getText().isEmpty() == true) {
 			driver.findElement(UnitNo).sendKeys((Integer.toString(unitNo)));
 		} else {
 			System.out.println("Leave Unit Number as it is");
@@ -169,7 +169,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterComplexName(String complexName) {
-		if (driver.findElement(ComplexName).getText().isBlank() == true) {
+		if (driver.findElement(ComplexName).getText().isEmpty() == true) {
 			driver.findElement(ComplexName).sendKeys(complexName);
 		} else {
 			System.out.println("Leave Complex Name as it is");
@@ -177,7 +177,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterStreetNumber(int streetNo) {
-		if (driver.findElement(StreetNo).getText().isBlank() == true) {
+		if (driver.findElement(StreetNo).getText().isEmpty() == true) {
 			driver.findElement(StreetNo).sendKeys((Integer.toString(streetNo)));
 		} else {
 			System.out.println("Leave Street Number as it is");
@@ -185,7 +185,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterStreetOrFarmName(String farmName) {
-		if (driver.findElement(FarmName).getText().isBlank() == true) {
+		if (driver.findElement(FarmName).getText().isEmpty() == true) {
 			driver.findElement(FarmName).sendKeys(farmName);
 		} else {
 			System.out.println("Leave Street or Farm Name as it is");
@@ -193,7 +193,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterSuburbName(String suburbName) {
-		if (driver.findElement(Suburb).getText().isBlank() == true) {
+		if (driver.findElement(Suburb).getText().isEmpty() == true) {
 			driver.findElement(Suburb).sendKeys(suburbName);
 		} else {
 			System.out.println("Leave suburb Name as it is");
@@ -201,7 +201,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterCityOrTownName(String cityName) {
-		if (driver.findElement(City).getText().isBlank() == true) {
+		if (driver.findElement(City).getText().isEmpty() == true) {
 			driver.findElement(City).sendKeys(cityName);
 		} else {
 			System.out.println("Leave City Name as it is");
@@ -209,7 +209,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterPostalCode(int pCode) {
-		if (driver.findElement(PostalCode).getText().isBlank() == true) {
+		if (driver.findElement(PostalCode).getText().isEmpty() == true) {
 			driver.findElement(PostalCode).sendKeys((Integer.toString(pCode)));
 		} else {
 			System.out.println("Leave Postal Code as it is");
@@ -276,7 +276,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterAccountHolderName(String accName) {
-		if (driver.findElement(AccHolderName).getText().isBlank() == true) {
+		if (driver.findElement(AccHolderName).getText().isEmpty() == true) {
 			driver.findElement(AccHolderName).sendKeys(accName);
 		} else {
 			System.out.println("Leave AccHolder Name as it is");
@@ -285,7 +285,7 @@ public class withdrawalClaimPage {
 	
 	public void EnterNameOfTheBank(String bankName) {
 		util.HardWait(700);
-		if (driver.findElement(NameOfBank).getText().isBlank() == true) {
+		if (driver.findElement(NameOfBank).getText().isEmpty() == true) {
 			driver.findElement(NameOfBank).sendKeys(bankName);
 		} else {
 			System.out.println("Leave Name Of Bank as it is");
@@ -293,7 +293,7 @@ public class withdrawalClaimPage {
 	}
 	
 	public void EnterAccountNumber(long accNo) {
-		if (driver.findElement(AccNo).getText().isBlank() == true) {
+		if (driver.findElement(AccNo).getText().isEmpty() == true) {
 			driver.findElement(AccNo).sendKeys(Long.toString(accNo));
 		} else {
 			System.out.println("Leave account number as it is");
@@ -302,7 +302,7 @@ public class withdrawalClaimPage {
 	
 	public void EnterBranchCode(int branchCode) {
 		util.HardWait(700);
-		if (driver.findElement(BranchCode).getText().isBlank() == true) {
+		if (driver.findElement(BranchCode).getText().isEmpty() == true) {
 			driver.findElement(BranchCode).sendKeys(Integer.toString(branchCode));
 		} else {
 			System.out.println("Leave Name Of Bank as it is");
